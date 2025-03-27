@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Scraper Auto Blogger Pro - API</title>
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--bs-primary);
+            margin-bottom: 1rem;
+        }
+        .hero-section {
+            padding: 3rem 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/static/img/hero-bg.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+        }
+        .card {
+            height: 100%;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <header class="hero-section mb-5">
+        <div class="container text-center">
+            <h1 class="display-4">AI News Scraper Auto Blogger Pro</h1>
+            <p class="lead">Advanced API for scraping news, generating AI content, and automating blog posts</p>
+            <div class="mt-4">
+                <a href="/demo" class="btn btn-primary me-2">Try Demo</a>
+                <a href="/setup" class="btn btn-outline-light me-2">Setup Guide</a>
+                <a href="/hosting" class="btn btn-outline-light">Hosting Guide</a>
+                <a href="/download" class="btn btn-success ms-2">Download Plugin</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Powerful Features</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">📰</div>
+                            <h5 class="card-title">Advanced Web Scraping</h5>
+                            <p class="card-text">Extract clean, readable content from any news website or blog with our powerful scraping engine.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">🤖</div>
+                            <h5 class="card-title">AI Content Generation</h5>
+                            <p class="card-text">Transform scraped content into unique, SEO-optimized articles using cutting-edge AI models.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">📊</div>
+                            <h5 class="card-title">SEO Optimization</h5>
+                            <p class="card-text">Generate SEO metadata, tags, and categories automatically to improve your content's visibility.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">🔄</div>
+                            <h5 class="card-title">RSS Feed Processing</h5>
+                            <p class="card-text">Monitor and process articles from RSS feeds automatically, filtering by keywords.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">🖼️</div>
+                            <h5 class="card-title">Image Generation</h5>
+                            <p class="card-text">Create AI-generated featured images for your articles using DALL-E.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">🔌</div>
+                            <h5 class="card-title">WordPress Integration</h5>
+                            <p class="card-text">Seamlessly publish generated content to your WordPress blog with our plugin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Supported AI Models</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">OpenAI GPT-4o</h5>
+                            <p class="card-text">State-of-the-art language model for highest quality content generation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Google Gemini</h5>
+                            <p class="card-text">Google's advanced AI model for versatile content creation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Anthropic Claude</h5>
+                            <p class="card-text">Powerful AI assistant with high accuracy and natural language generation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">DeepSeek</h5>
+                            <p class="card-text">Advanced open-source model with great performance for content generation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="text-center mb-4">API Endpoints</h2>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Endpoint</th>
+                            <th>Method</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>/status</code></td>
+                            <td>GET</td>
+                            <td>Health check endpoint</td>
+                        </tr>
+                        <tr>
+                            <td><code>/scrape</code></td>
+                            <td>POST</td>
+                            <td>Scrape content from a URL</td>
+                        </tr>
+                        <tr>
+                            <td><code>/scrape/rss</code></td>
+                            <td>POST</td>
+                            <td>Scrape articles from an RSS feed</td>
+                        </tr>
+                        <tr>
+                            <td><code>/scrape/rss/test</code></td>
+                            <td>POST</td>
+                            <td>Test an RSS feed by fetching a few items</td>
+                        </tr>
+                        <tr>
+                            <td><code>/ai/generate</code></td>
+                            <td>POST</td>
+                            <td>Generate AI content from scraped content</td>
+                        </tr>
+                        <tr>
+                            <td><code>/ai/generate_image</code></td>
+                            <td>POST</td>
+                            <td>Generate an image using AI</td>
+                        </tr>
+                        <tr>
+                            <td><code>/ai/generate_seo</code></td>
+                            <td>POST</td>
+                            <td>Generate SEO data for an article</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>AI News Scraper Auto Blogger Pro API Service</p>
+            <p class="mb-0">© 2025 All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
